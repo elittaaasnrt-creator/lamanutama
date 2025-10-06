@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pak Damar Elektronik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Orbitron:wght@400..900&display=swap');
+
+    body {
+      background-color: #2b2b2b;
+      color: #f5f5f5;
+      font-family: 'EB Garamond', serif;
+    }
+
+    nav.navbar {
+      background-color: #1e1e1e;
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      color: #00bfff !important;
+      letter-spacing: 1px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #e0e0e0 !important;
+      font-weight: 500;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #00bfff !important;
+    }
+
+    .btn-outline-light {
+      border-color: #00bfff;
+      color: #00bfff;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #00bfff;
+      color: #1e1e1e;
+    }
+
+    .hero-section {
+      background: linear-gradient(to right, #1e1e1e, #2f2f2f);
+      padding: 100px 20px;
+      text-align: center;
+      border-bottom: 3px solid #00bfff;
+    }
+
+    .hero-section h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.8rem;
+      color: #00bfff;
+      margin-bottom: 15px;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      color: #dcdcdc;
+    }
+
+    .card {
+      background-color: #3a3a3a;
+      border: none;
+      border-radius: 10px;
+      color: #f0f0f0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .btn-custom {
+      background-color: #00bfff;
+      color: #1e1e1e;
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #33ccff;
+      color: #000;
+    }
+
+    .ads-section {
+      background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+      border: 2px dashed #00bfff;
+      border-radius: 15px;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 60px;
+      color: #e0e0e0;
+    }
+
+    .ads-section h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00bfff;
+      margin-bottom: 15px;
+    }
+
+    .ads-section p {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      border-top: 2px solid #00bfff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pak Damar Elektronik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 bg-dark text-light border-0" type="search" placeholder="Cari produk..." aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Cari</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section mt-5 pt-5">
+    <div class="container">
+      <h1>Selamat Datang di Pak Damar Elektronik</h1>
+      <p>Toko elektronik terpercaya dengan produk berkualitas dan harga bersahabat.</p>
+      <a href="#" class="btn btn-custom mt-3">Belanja Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section class="container mt-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold" style="color:#00bfff;">Produk Unggulan</h2>
+      <p>Pilihan produk elektronik terbaik untuk kebutuhan Anda.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-4"><div class="card"><img src="tv.jpg" class="card-img-top" alt="Televisi"><div class="card-body"><h5 class="card-title">Smart TV 43"</h5><p class="card-text">Kualitas gambar tajam dan suara jernih, cocok untuk hiburan keluarga.</p></div></div></div>
+      <div class="col-md-3 mb-4"><div class="card"><img src="kulkas.jpg" class="card-img-top" alt="Kulkas"><div class="card-body"><h5 class="card-title">Kulkas Dua Pintu</h5><p class="card-text">Desain modern dan hemat energi untuk kebutuhan rumah tangga Anda.</p></div></div></div>
+      <div class="col-md-3 mb-4"><div class="card"><img src="mesin-cuci.jpg" class="card-img-top" alt="Mesin Cuci"><div class="card-body"><h5 class="card-title">Mesin Cuci Otomatis</h5><p class="card-text">Hemat waktu, bersih maksimal, dan perawatan mudah.</p></div></div></div>
+      <div class="col-md-3 mb-4"><div class="card"><img src="laptop.jpg" class="card-img-top" alt="Laptop"><div class="card-body"><h5 class="card-title">Laptop Ultrabook</h5><p class="card-text">Ringan, cepat, dan cocok untuk kebutuhan kerja maupun kuliah.</p></div></div></div>
+      <div class="col-md-3 mb-4"><div class="card"><img src="smartphone.jpg" class="card-img-top" alt="Smartphone"><div class="card-body"><h5 class="card-title">Smartphone 5G</h5><p class="card-text">Koneksi super cepat dan kamera canggih untuk gaya hidup modern.</p></div></div></div>
+      <div class="col-md-3 mb-4"><div class="card"><img src="kipas-angin.jpg" class="card-img-top" alt="Kipas Angin"><div class="card-body"><h5 class="card-title">Kipas Angin Remote</h5><p class="card-text">Praktis dengan kontrol jarak jauh dan suara halus.</p></div></div></div>
+      <div class="col-md-3 mb-4"><div class="card"><img src="speaker.jpg" class="card-img-top" alt="Speaker"><div class="card-body"><h5 class="card-title">Speaker Bluetooth</h5><p class="card-text">Suara menggelegar dan tahan lama, cocok untuk pesta dan perjalanan.</p></div></div></div>
+      <div class="col-md-3 mb-4"><div class="card"><img src="kamera.jpg" class="card-img-top" alt="Kamera"><div class="card-body"><h5 class="card-title">Kamera DSLR</h5><p class="card-text">Hasil foto profesional dengan fitur lengkap untuk fotografer kreatif.</p></div></div></div>
+    </div>
+
+    <div class="text-center">
+      <a href="#" class="btn btn-custom mt-2">Lihat Semua Produk</a>
+    </div>
+  </section>
+
+ <!-- Iklan Website -->
+<section class="container ads-section text-center my-5">
+  <h3 style="color:#00bfff; font-family:'Orbitron', sans-serif;">🎉 Promo Spesial 10.10 Telah Tiba! 🎉</h3>
+  <p>Dapatkan <strong>Diskon 50%</strong> untuk semua produk pilihan dan <strong>Gratis Ongkir</strong> selama periode promo!</p>
+  <img src="promo.jpg" alt="Iklan Promo 10.10" class="img-fluid rounded mb-3" style="max-width:600px;">
+  <p>Promo berlaku mulai <strong>20 - 30 November 2025</strong>. Jangan lewatkan kesempatan spesial ini!</p>
+  <div>
+    <a href="#" class="btn btn-custom">Belanja Sekarang</a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pak Damar Elektronik | Desain oleh Jelita</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
